@@ -2,6 +2,7 @@ package com.bitas.petshop.ui.login
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.view.WindowManager
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.bitas.petshop.R
@@ -18,7 +19,8 @@ class LoginActivity : AppCompatActivity() {
         _binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+
 
 
     }
@@ -29,6 +31,8 @@ class LoginActivity : AppCompatActivity() {
 
 
     }
+
+
 
 
 
