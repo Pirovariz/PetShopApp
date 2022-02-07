@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view2"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/item_image2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/item_wishlist"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            app:layout_constraintTop_toTopOf="@id/item_image2"
+            app:layout_constraintRight_toRightOf="@id/item_image2"/>
+
+        <TextView
+            android:id="@+id/item_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/item_image2"
+            app:layout_constraintLeft_toLeftOf="@id/item_image2"/>
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/item_title2"
+            app:layout_constraintLeft_toLeftOf="@id/item_title2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
